@@ -1,5 +1,26 @@
-print("Welcomoe to the Band Name Generator.")
-street = input("What's the name of the city you grew up in?\n")
-pet = input("What's your pet's name?\n") 
-print("Your band mane could be " + street + " " + pet) 
-vehari             
+num_char = len(input("What is your name?"))
+new_num_char = str(num_char)
+print("Your name has " + new_num_char + " characters.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
