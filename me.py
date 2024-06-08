@@ -1,20 +1,8 @@
-num_char = len(input("What is your name?"))
-new_num_char = str(num_char)
-print("Your name has " + new_num_char + " characters.")
+height = input("entre your height in m:")
+weight = input("entre your weight in kg:")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+bmi = int(weight) / float(height) ** 2
+print(bmi)
 
 
 
