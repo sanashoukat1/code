@@ -1,7 +1,7 @@
 
-
-height = input("entre your height in m:")
-weight = input("entre your weight in kg:")
-
-bmi = int(weight) / float(height) ** 2
-print(bmi)
+score = 0
+height = 1.8
+iswinning = True
+ 
+#f-string
+print(f"your score is {score}, your heght is {height}, you are winning is {iswinning}")
