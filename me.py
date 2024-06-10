@@ -9,6 +9,7 @@ print(bmi)
 
 
 
+print("Welcome to the rollercoaster!")
 
 
 
