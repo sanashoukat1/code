@@ -1,15 +1,12 @@
-print(8 / 3)
+Year = int(input("Which year do you want to check?"))
 
-print(int(8 / 3))
-
-print(round(8 / 3))
-
-print(round(8 / 3, 2))
-
-print(round(2.66666666))
-
-print(8 // 3)
-
-result = 4 / 2
-result /= 2
-print(result)
+if Year % 4 == 0:
+    if Year % 100 == 0:
+        if Year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not leap year")
+    else:
+        print("Leap year")
+else:
+    print("Not leap year")                    

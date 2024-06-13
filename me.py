@@ -1,6 +1,12 @@
-number = int(input("Which number do you want to check?"))
+Year = int(input("Which year do you want to check?"))
 
-if number % 2 == 0:
-    print("This is an even number.")
+if Year % 4 == 0:
+    if Year % 100 == 0:
+        if Year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not leap year")
+    else:
+        print("Leap year")
 else:
-    print("This is an add number.")
+    print("Not leap year")                    
