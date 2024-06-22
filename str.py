@@ -1,14 +1,11 @@
-height = float(input("enter your height in m:"))
-weight = float(input("enter your weight in kg:"))
+import random
 
-bmi = round(weight / height ** 2)
-if bmi < 18.5:
-    print(f"Your bmi is {bmi}, you are under weight.")
-elif bmi < 25:
-    print(f"Your bmi is {bmi}, you have a normal weight.")    
-elif bmi < 30:
-    print(f"Your bmi is {bmi}, you are overweight.")    
-elif bmi < 35:
-    print(f"Your bmi is {bmi}, you are obese.") 
-else:
-    print(f"Your bmi is {bmi}, you are clinical obese.")       
+name_string = input("Give me everybody's names, seperated by a comma.")
+name = name_string.split(", ")
+
+num_items = len(name)
+random_choice = random.randint(0, num_items - 1)
+print(random_choice)
+
+person_who_will_pay = random.choice(name)
+print(person_who_will_pay + " is going to buy the meal today.")

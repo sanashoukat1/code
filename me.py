@@ -1,12 +1,7 @@
-Year = int(input("Which year do you want to check?"))
+import random
 
-if Year % 4 == 0:
-    if Year % 100 == 0:
-        if Year % 400 == 0:
-            print("Leap year")
-        else:
-            print("Not leap year")
-    else:
-        print("Leap year")
+random_side = random.randint(0, 1)
+if random_side == 1:
+    print("Heads")
 else:
-    print("Not leap year")                    
+    print("Tails")    

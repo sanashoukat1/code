@@ -1,29 +1,19 @@
-print("Welcome to the love calculator!")
-name1 = input("What is your name?\n")
-name2 = input("What is their name?\n")
-
-combined_string = name1 + name2
-lower_case_string = combined_string.lower()
-
-t = lower_case_string.count("t")
-r = lower_case_string.count("r")
-u = lower_case_string.count("u")
-e = lower_case_string.count("e")
-
-true = t+r+u+e
-
-l = lower_case_string.count("l")
-o = lower_case_string.count("o")
-v = lower_case_string.count("v")
-e = lower_case_string.count("e")
-
-love = l+o+v+e
-
-love_score = int(str(true) + str(love))
-
-if (love_score < 10 ) or (love_score > 90):
-    print(f"Your love_score is {love_score}, you go together like coke and mentos.")
-elif(love_score >= 40) and (love_score <= 50):
-    print(f"Your love_score is {love_score}, you are alright together.")
-else:
-    print(f"Your love_score is {love_score}") 
+try:
+    marks = float(input("Please enter the marks (0-100): "))
+    # Validate the marks are within a plausible range (0-100)
+    if 0 <= marks <= 100:
+        if marks >= 90:
+            grade = 'A'
+        elif marks >= 80:
+            grade = 'B'
+        elif marks >= 70:
+            grade = 'C'
+        elif marks >= 60:
+            grade = 'D'
+        else:
+            grade = 'F'
+        print("Grade:", grade)
+    else:
+        print("Invalid marks. Please enter a value between 0 and 100.")
+except ValueError:
+    print("Invalid input. Please enter a numeric value.")
