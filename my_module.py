@@ -1,8 +1,12 @@
-states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia", "Connecticut", "Massachusetts",
- "Maryland", "South Carolina", "New Hampshire", "Virginia", "New York", "North Carolina", "Rhode Island", 
-"Vermont", "Kentucky", "Tennessee", "Ohio", "Louisiana", "Indiana", "Mississippi", "Illinois", "Alabama", 
-"Maine", "Missouri", "Arkansas", "Michigan", "Florida"]
+row1 = ["😁", "😁", "😁"]
+row2 = ["😁", "😁", "😁"]
+row3 = ["😁", "😁", "😁"]
+map = [row1, row2, row3]
+position = (input("Where do you want to put the treasure?"))
 
+horizonal = int(position[0])
+vertical = int(position[1])
 
-states_of_america.append("Sanaland")
-print(states_of_america)
+selected_row = map[horizonal - 1]
+selected_row[vertical - 1] = "X"
+print(f"{row1}\n{row2}\n{row3}\n")
